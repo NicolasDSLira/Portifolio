@@ -43,6 +43,7 @@ const Home = ({projetos}) => {
             
                     
                     {projetos.map((projeto) => (
+                        <>
                         <div className={Style.itemProjetos} key={projeto.Id}>
                             <a href={projeto.Link} className={Style.hoverEfect}>
                                 <Image
@@ -63,6 +64,7 @@ const Home = ({projetos}) => {
                         </div>
 
                     <hr />
+                    </>
                     ))}
         
 
