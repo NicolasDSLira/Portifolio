@@ -61,6 +61,8 @@ const Home = ({projetos}) => {
 
                             </div>
                         </div>
+
+                    <hr />
                     ))}
         
 
