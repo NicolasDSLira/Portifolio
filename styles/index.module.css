@@ -101,6 +101,18 @@
     color: #BE967E;
 }
 
+.hoverEfect{
+    align-self: center;
+    padding: 20px;
+    transition: 1s;
+}
+
+.hoverEfect:hover{
+    cursor: pointer;
+    background-color: #BE967E;
+    border-radius: 20px;
+}
+
 
 @media only screen and (max-width: 768px){
     .header{

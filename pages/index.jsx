@@ -44,12 +44,14 @@ const Home = ({projetos}) => {
                     
                     {projetos.map((projeto) => (
                         <div className={Style.itemProjetos} key={projeto.Id}>
-                            <Image
-                                priority
-                                src={'/image/projetos/'+ projeto.Imagem +'.PNG'}
-                                width={455}
-                                height={167.666666}
-                            />
+                            <a href={projeto.Link} className={Style.hoverEfect}>
+                                <Image
+                                    priority
+                                    src={'/image/projetos/'+ projeto.Imagem +'.PNG'}
+                                    width={455}
+                                    height={167.6666667}
+                                />
+                            </a>
 
                             <div className={Style.colProjeto}>
                                 <h1>{projeto.Titulo}</h1>
