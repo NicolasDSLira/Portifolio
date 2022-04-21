@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    background: linear-gradient(to left, rgb(228, 228, 228), rgb(196, 196, 196), rgb(173, 173, 173));
+	font-family:  --apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+	font-size: 14;
+}
+
+:root{
+    --Dark:  #0B0B0D;
+    --Color: rgb(228, 225, 225); 
+}
+
+hr{
+    margin: 1rem;
+}
+
+b{
+    color: #725340;
+}
