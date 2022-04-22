@@ -32,7 +32,7 @@ const Home = ({projetos}) => {
                     </div>
 
                     <div className={Style.animateArrow}>
-                        <p className={Style.textArrow}>Projetos</p>
+                        <p className={Style.textArrow}>veja meus projetos</p>
                         <i className={Style.arrow}></i>
                     </div>
 
@@ -43,14 +43,15 @@ const Home = ({projetos}) => {
             
                     
                     {projetos.map((projeto) => (
-                        <>
+                    <>
                         <div className={Style.itemProjetos} key={projeto.Id}>
                             <a href={projeto.Link} className={Style.hoverEfect}>
                                 <Image
                                     priority
                                     src={'/image/projetos/'+ projeto.Imagem +'.PNG'}
                                     width={455}
-                                    height={167.6666667}
+                                    height={170}
+                                    className={Style.imagem}
                                 />
                             </a>
 
@@ -62,8 +63,6 @@ const Home = ({projetos}) => {
 
                             </div>
                         </div>
-
-                    <hr />
                     </>
                     ))}
         

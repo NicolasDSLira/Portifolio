@@ -4,14 +4,16 @@
 }
 
 html, body{
-    background: linear-gradient(to left, rgb(228, 228, 228), rgb(196, 196, 196), rgb(173, 173, 173));
+    background: linear-gradient(to left, rgb(255, 255, 255), rgb(236, 236, 236), rgb(255, 240, 240));
 	font-family:  --apple-system, BlinkMacSystemFont, Roboto, sans-serif;
 	font-size: 14;
+    line-height: 2;
+    text-align: justify;
 }
 
 :root{
     --Dark:  #0B0B0D;
-    --Color: rgb(228, 225, 225); 
+    --Color: rgb(255, 255, 255); 
 }
 
 hr{
