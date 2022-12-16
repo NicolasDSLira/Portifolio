@@ -34,12 +34,12 @@ export default function Navbar() {
             <div className={active ? styles.containerList : styles.containerListHidden}>
 
                 <li className={styles.list}>
-                    <Link href="/Portifolio" className={styles.item}>Portifolio</Link>
-                    <Link href="/Curriculum" className={styles.item}>curriculum</Link>
-                    <Link href="/Contact" className={styles.item}>Contato</Link>
+                    <Link href="/" className={styles.item}>Portifolio</Link>
+                    <Link href="/" className={styles.item}>curriculum</Link>
+                    <Link href="/" className={styles.item}>Contato</Link>
                 </li>
                 <div className={styles.item}>
-                    <a className={styles.socialLink}>
+                    <a className={styles.socialLink} href="https://github.com/NicolasDSLira/">
                         <Image
                             src="/ImgNav/github.png"
                             className={styles.social}
@@ -49,7 +49,7 @@ export default function Navbar() {
                         />
                     </a>
 
-                    <a className={styles.socialLink}>
+                    <a className={styles.socialLink} href="https://www.instagram.com/nl.developer/">
                         <Image
                             src="/ImgNav/instagram.png"
                             className={styles.social}
@@ -59,7 +59,7 @@ export default function Navbar() {
                         />
                     </a>
 
-                    <a className={styles.socialLink}>
+                    <a className={styles.socialLink} href="https://www.linkedin.com/in/nicolas-lira-4a704b21b/">
                         <Image
                             src="/ImgNav/linkedin.png"
                             className={styles.social}
@@ -69,7 +69,7 @@ export default function Navbar() {
                         />
                     </a>
 
-                    <a className={styles.socialLink}>
+                    <a className={styles.socialLink} href="https://twitter.com/Nicolas46765868">
                         <Image
                             src="/ImgNav/twitter.png"
                             className={styles.social}
