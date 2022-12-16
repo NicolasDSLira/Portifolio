@@ -2,11 +2,15 @@ import React from 'react'
 import Image from 'next/image'
 import Layout from '../components/layout'
 import styles from '../styles/Home.module.css'
+import Head from 'next/head'
 
 
 export default function Home() {
   return (
     <Layout>
+      <Head>
+        <title>Nicolas Lira</title>
+      </Head>
       <div className={styles.bodyPage}>
         <div className={styles.header}>
           <div className={styles.itemHeader}>
