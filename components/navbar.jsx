@@ -1,7 +1,7 @@
 import react from "react";
 import styles from "../styles/navbar.module.css"
 import Image from "next/image"
-import Link from "next/link"
+import Link from "next/link";
 
 export default function Navbar() {
 
@@ -13,13 +13,15 @@ export default function Navbar() {
     return (
         <nav className={styles.navbar} id="navbar">
             <div className={styles.containerVisible}>
-                <Image
-                    src="/NL.svg"
-                    className={styles.logo}
-                    alt="Logo NL"
-                    width={80}
-                    height={80}
-                />
+                <Link href="/">
+                    <Image
+                        src="/NL.svg"
+                        className={styles.logo}
+                        alt="Logo NL"
+                        width={50}
+                        height={50}
+                    />
+                </Link>
                 <div>
                     <input type="checkbox" className={styles.input} checked={active} onChange={showMenu} id="checkMenu"></input>
                     <label className={styles.hamburguerbtn} for="checkMenu">
@@ -35,7 +37,7 @@ export default function Navbar() {
 
                 <li className={styles.list}>
                     <Link href="/" className={styles.item}>Portifolio</Link>
-                    <Link href="/" className={styles.item}>curriculum</Link>
+                    <Link href="/Curriculum" className={styles.item}>curriculum</Link>
                     <Link href="/" className={styles.item}>Contato</Link>
                 </li>
                 <div className={styles.item}>

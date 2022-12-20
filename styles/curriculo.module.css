@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+.sectionsMain {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5rem;
+    border: 1px black solid;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 20px black;
+    font-size: 12pt;
+}
+
+.sectionLeft {
+    height: 100%;
+    width: 75%;
+    padding: 5rem 0rem 0rem 2rem;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionRight {
+    width: 25%;
+    padding: 5rem 1rem 1rem 1rem;
+    background-color: rgb(2, 77, 2);
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+
+}
+
+.contact {
+    display: block;
+
+}
+
+.contact h1 {
+    font-size: 20pt;
+}
+
+.title {
+    font-size: 16pt;
+}
+
+.line {
+    width: 100%;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0 auto 2rem auto;
+    width: 200px;
+    height: 200px;
+}
+
+.fotoMy {
+    border-radius: 100%;
+}
+
+.itemContact {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.iconContact {
+    margin: 1rem;
+}
+
+
+.container h3 {
+    text-transform: uppercase;
+}
+
+.mySkills {
+    list-style: outside;
+}
+
+.mySkills li {
+    margin: 1rem 5px;
+}
+
+.sectionLeft {
+    width: 100%;
+    padding-left: 5rem;
+}
+
+.topLeft {
+    margin: 1rem;
+}
+
+.MyName {
+    text-align: left;
+    font-size: 60pt;
+    position: relative;
+    margin: 0;
+    margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 1230px) {
+    .MyName:after {
+        content: 'Nicolas Lira';
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        transform: scaleY(-1);
+        transform-origin: bottom;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.5) 80%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.MyPro {
+    color: rgb(207, 208, 209);
+    text-transform: uppercase;
+    font: 100;
+}
+
+.inline {
+    display: flex;
+    width: 90%;
+    padding: 0rem;
+    align-items: center;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    font-size: 20pt;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+.inline h2 {
+    font-size: 18pt;
+}
+
+.itemConteiner {
+    font-size: 16pt;
+}
+
+.itemConteiner span {
+    font-weight: 100;
+}
+
+@media screen and (max-width: 1230px) {
+    .sectionsMain {
+        flex-direction: column-reverse;
+        margin: 1.5rem;
+    }
+
+    .sectionLeft {
+        width: 100%;
+        padding: 5rem 1rem 1rem 1rem;
+    }
+
+    .sectionRight {
+        width: 100%;
+        background: none;
+    }
+
+    .foto {
+        display: none;
+    }
+
+    .m5 {
+        margin: 2rem;
+    }
+
+    .MyName {
+        text-align: left;
+        font-size: 40pt;
+        position: relative;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
